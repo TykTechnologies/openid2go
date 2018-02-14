@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/square/go-jose"
+	"gopkg.in/square/go-jose.v1"
 )
 
 func Test_getJwkSet_UsesCorrectUrl(t *testing.T) {

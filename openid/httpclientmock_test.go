@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/square/go-jose"
+	"gopkg.in/square/go-jose.v1"
 )
 
 type Call interface{}
