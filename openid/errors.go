@@ -115,7 +115,7 @@ func validationErrorToHTTPStatus(e error, rw http.ResponseWriter, req *http.Requ
 		http.Error(rw, verr.Message, verr.HTTPStatus)
 	} else {
 		rw.WriteHeader(http.StatusInternalServerError)
-		fmt.Fprintf(rw, e.Error())
+		fmt.Fprint(rw, e.Error())
 	}
 
 	return true
